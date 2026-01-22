@@ -1,0 +1,18 @@
+<html> 
+<body> 
+<h2>Multiplication Table</h2> 
+<input type="text" id="num" /> 
+<button onclick="Multiplication()">Table</button> 
+<div id="table"></div> 
+<script> 
+function Multiplication() { 
+        const n = document.getElementById("num").value; 
+        let t = "Multiplication Table for " + n + ":\n"; 
+        for (let i = 1; i <= 10; i++) { 
+          t = t + n + " x " + i + " = " + n * i + "\n"; 
+        } 
+        document.getElementById("table").innerText = t; 
+      } 
+    </script> 
+  </body> 
+</html>
